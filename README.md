@@ -1,9 +1,9 @@
-# data-structures-and-algorithm
 
-
+# Data Structure And Algorithms
 
 ## Table of contents  :
 ---
 
-1. [Array Reverse](https://balqeesalfasatlah.github.io/Reading--Notes/class-01)
+1. [array-reverse](https://balqeesalfasatlah.github.io/data-structures-and-algorithm/array-reverse)
+
 

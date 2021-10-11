@@ -6,7 +6,7 @@
 
 | Title         | challenge doc & whiteboard    | code
 | :------------------| :-------------------------:|------------:
-| 1- Array-Reverse          |                               [array-reverse](https://balqeesalfasatlah.github.io/data-structures-and-algorithm/challenge/array-reverse)   |---                                           
+| 1- Array-Reverse          |                               [array-reverse](https://balqeesalfasatlah.github.io/data-structures-and-algorithm/challenge-1/array-reverse)   |---                                           
 |     |              
 
 

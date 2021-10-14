@@ -19,6 +19,7 @@ public class App {
         linkedList.inset(3);
         linkedList.inset(2);
         linkedList.inset(11);
+        linkedList.inset(20);
         System.out.println( linkedList.toString());
         System.out.println( linkedList.includes(10));
         System.out.println( linkedList.includes(6));

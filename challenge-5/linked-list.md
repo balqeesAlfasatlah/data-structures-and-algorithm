@@ -33,6 +33,7 @@ check the value and return true if its in the linkeslist and false if its not
 + toString : also i use while to loop over the linkedlist until reach to the null and assign the result to the current value ,then return it 
 
 
+
 ## Tests :
 - [x] Can successfully instantiate an empty linked list
 

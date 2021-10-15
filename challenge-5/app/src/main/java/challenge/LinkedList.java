@@ -7,7 +7,7 @@ public class LinkedList<T> {
         this.head = null;
     }
 
-    public void inset(T val){
+    public void insert(T val){
         Node node = new Node(val);
         node.next = head;
         head = node;

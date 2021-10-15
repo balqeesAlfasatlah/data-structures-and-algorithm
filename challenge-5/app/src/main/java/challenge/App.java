@@ -13,13 +13,13 @@ public class App {
         System.out.println(new App().getGreeting());
 
         LinkedList<Integer> linkedList = new LinkedList<Integer>();
-        linkedList.inset(1);
-        linkedList.inset(4);
-        linkedList.inset(10);
-        linkedList.inset(3);
-        linkedList.inset(2);
-        linkedList.inset(11);
-        linkedList.inset(20);
+        linkedList.insert(1);
+        linkedList.insert(4);
+        linkedList.insert(10);
+        linkedList.insert(3);
+        linkedList.insert(2);
+        linkedList.insert(11);
+        linkedList.insert(21);
         System.out.println( linkedList.toString());
         System.out.println( linkedList.includes(10));
         System.out.println( linkedList.includes(6));

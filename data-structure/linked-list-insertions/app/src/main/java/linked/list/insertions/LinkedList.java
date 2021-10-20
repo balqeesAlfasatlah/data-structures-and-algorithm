@@ -2,8 +2,13 @@ package linked.list.insertions;
 
 public class LinkedList<T> {
     Node<T> head;
+    private int size;
 
-   public LinkedList()
+    public int getSize() {
+        return size;
+    }
+
+    public LinkedList()
    {
         this.head = null;
    }
@@ -82,7 +87,6 @@ public class LinkedList<T> {
      }
 
 
-
      @Override
       public String toString()
      {
@@ -95,5 +99,22 @@ public class LinkedList<T> {
         result += "NULL";
         return  result;
         }
+
+
+        public String linkedListKth(int k){
+         Node cur = head;
+         if(head == null){
+             return "the list is empty";
+         }if(k > getSize() -1 || k <0){
+             return "please enter a correct number";
+            }
+         int i =0;
+         while (i < (getSize() -1 -k)){
+             cur =cur.getNext();
+             i++;
+         }
+         return (String) cur.getVal();
+
+         }
      }
 

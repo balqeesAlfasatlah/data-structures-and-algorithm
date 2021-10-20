@@ -24,8 +24,10 @@ public class App {
        linkedList.insertBefore(2,5);
        linkedList.insertAfter(4,9);
 
+
         System.out.println( linkedList.toString());
         System.out.println( linkedList.includes(10));
         System.out.println( linkedList.includes(6));
+        System.out.println( linkedList.linkedListKth(7));
     }
 }

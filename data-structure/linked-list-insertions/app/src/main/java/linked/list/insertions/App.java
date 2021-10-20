@@ -28,6 +28,25 @@ public class App {
         System.out.println( linkedList.toString());
         System.out.println( linkedList.includes(10));
         System.out.println( linkedList.includes(6));
-        System.out.println( linkedList.linkedListKth(7));
+       // System.out.println( linkedList.linkedListKth(7));
+
+        LinkedList list1 = new LinkedList();
+        list1.append(1);
+        list1.append(2);
+        list1.append(3);
+
+        LinkedList list2 = new LinkedList();
+        list1.append(5);
+        list1.append(9);
+        list1.append(4);
+
+        LinkedList linkedList2 = new LinkedList();
+        linkedList2 = linkedList2.zip(list1,list2);
+        System.out.println(linkedList2);
+
+
+
+
+
     }
 }

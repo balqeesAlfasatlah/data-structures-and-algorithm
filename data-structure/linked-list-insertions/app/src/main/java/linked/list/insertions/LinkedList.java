@@ -120,41 +120,36 @@ public class LinkedList<T> {
         }
         return "error";
     }
-}
 
-         int i =0;
-         while (i < (getSize() -1 -k)){
-             cur =cur.getNext();
-             i++;
-         }
-         return (String) cur.getVal();
 
-         }
+    public LinkedList zip(LinkedList list1, LinkedList list2) {
+        LinkedList linkedList = new LinkedList();
+        Node cur1 = list1.head;
+        Node cur2 = list2.head;
 
-         public LinkedList zip(LinkedList list1 , LinkedList list2){
-            LinkedList linkedList = new LinkedList();
-            Node cur1 = list1.head;
-            Node cur2 = list2.head;
+        while (cur1 != null || cur2 != null) {
+            if (cur1 != null && cur2 != null) {
+                linkedList.append(cur1.getVal());
+                linkedList.append(cur2.getVal());
 
-            while (cur1 != null || cur2 != null){
-                if(cur1 != null && cur2 != null){
-                    linkedList.append(cur1.getVal());
-                    linkedList.append(cur2.getVal());
-
-                    cur1 = cur1.next;
-                    cur2 = cur2.next;
-                }
-                else if(cur1 == null){
-                    linkedList.append(cur2.getVal());
-                    cur2 = cur2.next;
-                }
-                else if(cur2 == null){
-                    linkedList.append(cur1.getVal());
-                    cur1= cur1.next;
-                }
+                cur1 = cur1.next;
+                cur2 = cur2.next;
+            } else if (cur1 == null) {
+                linkedList.append(cur2.getVal());
+                cur2 = cur2.next;
+            } else if (cur2 == null) {
+                linkedList.append(cur1.getVal());
+                cur1 = cur1.next;
             }
+        }
             return linkedList;
-         }
+        }
+
     }
+
+
+
+
+
 
 

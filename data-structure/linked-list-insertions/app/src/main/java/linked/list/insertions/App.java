@@ -31,7 +31,7 @@ public class App {
 
         System.out.println( linkedList.linkedListKth(5));
 
-       // System.out.println( linkedList.linkedListKth(7));
+        System.out.println( linkedList.linkedListKth(7));
 
         LinkedList list1 = new LinkedList();
         list1.append(1);
@@ -40,8 +40,8 @@ public class App {
 
         LinkedList list2 = new LinkedList();
         list1.append(5);
-        list1.append(9);
         list1.append(4);
+        list1.append(7);
 
         LinkedList linkedList2 = new LinkedList();
         linkedList2 = linkedList2.zip(list1,list2);

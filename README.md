@@ -12,6 +12,7 @@
 | 5- linked-list|[linked-list](https://balqeesalfasatlah.github.io/data-structures-and-algorithm/challenge-5/linked-list)
 |6-linked-list-insertions|[linked-list-insertions](https://balqeesalfasatlah.github.io/data-structures-and-algorithm/data-structure/linked-list-insertions)
  7- linked-list-kth| [linked-list-kth](https://balqeesalfasatlah.github.io/data-structures-and-algorithm/data-structure/linked-list-insertions/linked-list-kth)
+  8- linked-list-zip| [linked-list-zip](https://balqeesalfasatlah.github.io/data-structures-and-algorithm/data-structure/linked-list-insertions/linked-list-zip)
 
 
 

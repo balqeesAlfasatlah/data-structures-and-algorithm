@@ -131,5 +131,46 @@ class AppTest {
             assertEquals("tha index from the end is : 3",linkedList.linkedListKth(2));
         }
 
+    @Test void zipDifferentSize() {
+        LinkedList linkedList1 = new LinkedList();
+        linkedList1.append(1);
+        linkedList1.append(6);
+        linkedList1.append(3);
+        LinkedList linkedList2 = new LinkedList();
+        linkedList2.append(10);
+
+
+        LinkedList list = new LinkedList();
+        list = linkedList1.zip(linkedList1,linkedList2);
+        assertEquals("{ 1 } -> { 10 } -> { 6 } -> { 3 } -> NULL",list.toString());
+    }
+
+    @Test void zipEmptyList() {
+        LinkedList linkedList1 = new LinkedList();
+        LinkedList linkedList2 = new LinkedList();
+        linkedList2.append(4);
+        linkedList2.append(10);
+        linkedList2.append(5);
+
+        LinkedList list = new LinkedList();
+        list = linkedList1.zip(linkedList1,linkedList2);
+        assertEquals("{ 4 } -> { 10 } -> { 5 } -> NULL",list.toString());
+    }
+
+    @Test void zipHappyPath() {
+        LinkedList linkedList1 = new LinkedList();
+        linkedList1.append(1);
+        linkedList1.append(6);
+        linkedList1.append(3);
+        LinkedList linkedList2 = new LinkedList();
+        linkedList2.append(4);
+        linkedList2.append(10);
+        linkedList2.append(5);
+
+        LinkedList list = new LinkedList();
+        list = linkedList1.zip(linkedList1,linkedList2);
+        assertEquals("{ 1 } -> { 4 } -> { 6 } -> { 10 } -> { 3 } -> { 5 } -> NULL",list.toString());
+    }
+
 
     }

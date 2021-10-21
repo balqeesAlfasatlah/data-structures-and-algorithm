@@ -83,4 +83,53 @@ class AppTest {
         assertEquals("{ 10 } -> { 4 } -> { 1 } -> { 9 } -> { 8 } -> NULL", linkedList.toString());
 
    }
-}
+
+
+    @Test void linkedlistKh() {
+        LinkedList<Integer> linkedList = new LinkedList<Integer>();
+        linkedList.append(1);
+        linkedList.append(6);
+        linkedList.append(3);
+        linkedList.append(10);
+        linkedList.append(5);
+        assertEquals("tha index from the end is : 10",linkedList.linkedListKth(1));
+
+    }
+
+    @Test void KthLength() {
+        LinkedList<Integer> linkedList = new LinkedList<Integer>();
+        linkedList.append(1);
+        linkedList.append(6);
+        linkedList.append(3);
+        linkedList.append(10);
+        linkedList.append(5);
+        assertEquals("enter correct number",linkedList.linkedListKth(6));
+    }
+        @Test void KthNotPositive() {
+            LinkedList<Integer> linkedList = new LinkedList<Integer>();
+            linkedList.append(1);
+            linkedList.append(6);
+            linkedList.append(3);
+            linkedList.append(10);
+            linkedList.append(5);
+            assertEquals("enter correct number",linkedList.linkedListKth(-4));
+         }
+
+       @Test void KthOneNode() {
+            LinkedList<Integer> linkedList = new LinkedList<Integer>();
+            linkedList.append(1);
+            assertEquals("enter correct number",linkedList.linkedListKth(3));
+        }
+
+        @Test void HappyBath() {
+            LinkedList<Integer> linkedList = new LinkedList<Integer>();
+            linkedList.append(1);
+            linkedList.append(6);
+            linkedList.append(3);
+            linkedList.append(10);
+            linkedList.append(5);
+            assertEquals("tha index from the end is : 3",linkedList.linkedListKth(2));
+        }
+
+
+    }

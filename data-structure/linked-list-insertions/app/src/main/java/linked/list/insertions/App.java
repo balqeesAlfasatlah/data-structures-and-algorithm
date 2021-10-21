@@ -28,6 +28,9 @@ public class App {
         System.out.println( linkedList.toString());
         System.out.println( linkedList.includes(10));
         System.out.println( linkedList.includes(6));
+
+        System.out.println( linkedList.linkedListKth(5));
+
        // System.out.println( linkedList.linkedListKth(7));
 
         LinkedList list1 = new LinkedList();
@@ -43,6 +46,7 @@ public class App {
         LinkedList linkedList2 = new LinkedList();
         linkedList2 = linkedList2.zip(list1,list2);
         System.out.println(linkedList2);
+
 
 
 

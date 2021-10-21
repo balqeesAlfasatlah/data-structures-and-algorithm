@@ -8,106 +8,120 @@ public class LinkedList<T> {
         return size;
     }
 
-    public LinkedList()
-   {
+    public LinkedList() {
         this.head = null;
-   }
+    }
 
-   public void insert(T val)
-   {
+    public void insert(T val) {
         Node node = new Node(val);
         node.next = head;
         head = node;
-   }
+    }
 
-   boolean includes(T value)
-   {
+    boolean includes(T value) {
         Node cur = head;
-        while (cur.next != null){
-          if(cur.val.equals(value)){
-            return true;
-        }
-        cur = cur.next;
+        while (cur.next != null) {
+            if (cur.val.equals(value)) {
+                return true;
+            }
+            cur = cur.next;
         }
         return false;
 
-   }
-     public void append(T value){
+    }
 
-       Node node = new Node(value);
-       Node cur = head;
-       if(cur == null){
-           head= node;
-           return;
-       }
-           while (cur.next != null){
-               cur = cur.next;
-           }
-          cur.next = node;
-       }
+    public void append(T value) {
 
-
-
-     public void insertBefore(T value , T valBefore){
-       Node node = new Node(valBefore);
-       if(head == null){
-           head = node;
-       }else if(head.val.equals(value)){
-           node.next = head;
-           head = node;
-         }else {
-           Node temp = head;
-           Node curNode = head.next;
-           while (!curNode.val.equals(value)){
-               temp = temp.next;
-               curNode = curNode.next;
-           }
-           node.next = temp.next;
-           temp.next = node;
-         }
-     }
+        Node node = new Node(value);
+        Node cur = head;
+        if (cur == null) {
+            head = node;
+            return;
+        }
+        while (cur.next != null) {
+            cur = cur.next;
+        }
+        cur.next = node;
+    }
 
 
+    public void insertBefore(T value, T valBefore) {
+        Node node = new Node(valBefore);
+        if (head == null) {
+            head = node;
+        } else if (head.val.equals(value)) {
+            node.next = head;
+            head = node;
+        } else {
+            Node temp = head;
+            Node curNode = head.next;
+            while (!curNode.val.equals(value)) {
+                temp = temp.next;
+                curNode = curNode.next;
+            }
+            node.next = temp.next;
+            temp.next = node;
+        }
+    }
 
-     public void insertAfter(T value ,T valAfter){
-       Node cur = head;
-       Node newNode = new Node(valAfter);
 
-       if(cur == null){
-           head = newNode;
-           return;
+    public void insertAfter(T value, T valAfter) {
+        Node cur = head;
+        Node newNode = new Node(valAfter);
 
-       }while (cur != null){
-          if(cur.val.equals(value)){
-              newNode.next = cur.next;
-              cur.next = newNode;
-          }
-          cur =cur.next;
-       }
-     }
+        if (cur == null) {
+            head = newNode;
+            return;
+
+        }
+        while (cur != null) {
+            if (cur.val.equals(value)) {
+                newNode.next = cur.next;
+                cur.next = newNode;
+            }
+            cur = cur.next;
+        }
+    }
 
 
-     @Override
-      public String toString()
-     {
+    @Override
+    public String toString() {
         Node cur = head;
         String result = "";
-        while (cur != null){
-          result += "{ " + cur.val + " } -> ";
-          cur = cur.next;
+        while (cur != null) {
+            result += "{ " + cur.val + " } -> ";
+            cur = cur.next;
         }
         result += "NULL";
-        return  result;
+        return result;
+    }
+
+
+    public String linkedListKth(int k) {
+        if (head == null)
+            return "empty list";
+        Node cur = head;
+        int counter = 0;
+        while (cur.next != null) {
+            cur = cur.next;
+            counter++;
         }
-
-
-        public String linkedListKth(int k){
-         Node cur = head;
-         if(head == null){
-             return "the list is empty";
-         }if(k > getSize() -1 || k <0){
-             return "please enter a correct number";
+        if (k > counter || k < 0) {
+            return "enter correct number";
+        } else {
+            cur = head;
+            for (int i = 0; i <= counter - k; i++) {
+                if (i == counter - k) {
+                    return "tha index from the end is : " + cur.val;
+                }
+                cur = cur.next;
             }
+
+        }
+        return "error";
+    }
+}
+
          int i =0;
          while (i < (getSize() -1 -k)){
              cur =cur.getNext();
@@ -141,5 +155,6 @@ public class LinkedList<T> {
             }
             return linkedList;
          }
-{}     }
+    }
+
 

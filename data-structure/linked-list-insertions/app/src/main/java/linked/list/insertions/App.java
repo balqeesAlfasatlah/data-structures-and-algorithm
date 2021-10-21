@@ -28,6 +28,6 @@ public class App {
         System.out.println( linkedList.toString());
         System.out.println( linkedList.includes(10));
         System.out.println( linkedList.includes(6));
-        System.out.println( linkedList.linkedListKth(7));
+        System.out.println( linkedList.linkedListKth(5));
     }
 }

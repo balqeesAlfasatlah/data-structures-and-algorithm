@@ -7,7 +7,16 @@
     <list default="true" id="0cd8e185-7a23-485d-bdf0-5a890714d4ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+=======
+
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/linked/list/insertions/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linked/list/insertions/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/linked/list/insertions/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linked/list/insertions/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/linked/list/insertions/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/linked/list/insertions/AppTest.java" afterDir="false" />
+
+
+>>>>>>> 3bff6b1bdab2868e057e2651eadcc2aa9770782d
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +57,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/java-fundamentals/inheritance" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Gradle.AppTest.HappyBath">
@@ -188,6 +197,11 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/linked/list/insertions/App.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

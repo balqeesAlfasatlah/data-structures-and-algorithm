@@ -73,3 +73,20 @@ the challenge is about to Create a stack class and queue class also and each cla
 - [x] Can successfully empty a queue after multiple dequeues
 - [x] Can successfully instantiate an empty queue
 - [x] Calling dequeue or peek on empty queue raises exception
+
+
+# Challenge stack-queue-pseudo
+
+Create a new class called pseudo queue has two stacks and enqueue , dequeue methods
+
+## Whiteboard Process
+
+
+[![chal11.png](https://i.postimg.cc/J4gSSRW1/chal11.png)](https://postimg.cc/qzsm3VRY)
+
+## Approach & Efficiency
+
++ enqueue : Inserts value into the PseudoQueue, using a first-in, first-out approach.
+
++ dequeue : Extracts a value from the PseudoQueue, using a first-in, first-out approach
+

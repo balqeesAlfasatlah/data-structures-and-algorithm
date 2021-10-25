@@ -145,4 +145,21 @@ class AppTest {
     }
 
 
+    @Test void PseudoQueueEmpty(){
+        PseudoQueue pseudoQueue = new PseudoQueue();
+        assertEquals("empty stack",pseudoQueue.dequeue());
+    }
+
+    @Test void PseudoQueue(){
+        PseudoQueue pseudoQueue = new PseudoQueue();
+        pseudoQueue.enqueue("B");
+        pseudoQueue.enqueue("A");
+        pseudoQueue.enqueue("L");
+        pseudoQueue.enqueue("Q");
+        assertEquals("B",pseudoQueue.dequeue());
+        pseudoQueue.dequeue();
+        assertEquals("L",pseudoQueue.dequeue());
+    }
+
+
 }

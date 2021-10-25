@@ -93,6 +93,5 @@ Create a new class called pseudo queue has two stacks and enqueue , dequeue meth
 
 ## Testing :
 
-[x] If its empty
-
-[x] enqueue and dequeue methods
+- [x] If its empty
+- [x] enqueue and dequeue methods

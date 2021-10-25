@@ -90,3 +90,9 @@ Create a new class called pseudo queue has two stacks and enqueue , dequeue meth
 
 + dequeue : Extracts a value from the PseudoQueue, using a first-in, first-out approach
 
+
+### Testing :
+
+[x] If its empty
+
+[x] enqueue and dequeue methods

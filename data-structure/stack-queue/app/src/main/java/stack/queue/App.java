@@ -43,6 +43,18 @@ public class App {
         System.out.println("is it empty ? " + stack.isEmpty());
         System.out.println("the new stack values : " + stack);
 
+        PseudoQueue pseudoQueue = new PseudoQueue();
+        pseudoQueue.enqueue("B");
+        pseudoQueue.enqueue("A");
+        pseudoQueue.enqueue("L");
+        pseudoQueue.enqueue("Q");
+        pseudoQueue.enqueue("E");
+        pseudoQueue.enqueue("S");
+        pseudoQueue.dequeue();
+        pseudoQueue.dequeue();
+        System.out.println(pseudoQueue.stackTwo.toString());
+
+
 
     }
 

@@ -186,4 +186,14 @@ class AppTest {
     }
 
 
+    @Test public void bracket(){
+        StackQueueBrackets stackQueueBrackets = new StackQueueBrackets();
+
+        assertTrue(stackQueueBrackets.validateBrackets("()")); //T
+        assertFalse(stackQueueBrackets.validateBrackets("({}])")); //F
+        assertTrue(stackQueueBrackets.validateBrackets("[()]")); //T
+        assertTrue(stackQueueBrackets.validateBrackets("{}[()]")); //T
+        assertFalse(stackQueueBrackets.validateBrackets("{")); //F
+    }
+
 }

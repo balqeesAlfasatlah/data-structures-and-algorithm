@@ -79,6 +79,14 @@ public class App {
         System.out.println(animalShelter);
 
 
+        StackQueueBrackets stackQueueBrackets = new StackQueueBrackets();
+        System.out.println(stackQueueBrackets.validateBrackets("()")); //T
+        System.out.println(stackQueueBrackets.validateBrackets("({}])")); //F
+        System.out.println(stackQueueBrackets.validateBrackets("[()]")); //T
+        System.out.println(stackQueueBrackets.validateBrackets("{}[()]")); //T
+        System.out.println(stackQueueBrackets.validateBrackets("{")); //F
+
+
 
 
 

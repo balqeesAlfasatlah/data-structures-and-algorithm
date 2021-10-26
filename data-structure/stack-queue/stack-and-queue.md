@@ -126,4 +126,25 @@ If pref is not "dog" or "cat" then return null.
 
 - [x] enqueue and dequeue methods for animals 
 
+# Challenge stack-queue-brackets
+
+Write a function called validate brackets representing whether or not the brackets in the string are balanced
+
+## Whiteboard Process
+
+
+[![chal13.png](https://i.postimg.cc/SsNP4n4c/chal13.png)](https://postimg.cc/bGWgHNsv)
+
+
+## Approach & Efficiency
+
+space : O(n)
+time : O(n)
+
+
+## Testing :
+
+- [x] push brackets and see if its balanced return true else return false
+
+
 

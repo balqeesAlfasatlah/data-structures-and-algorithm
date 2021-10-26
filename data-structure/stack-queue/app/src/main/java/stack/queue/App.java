@@ -54,6 +54,33 @@ public class App {
         pseudoQueue.dequeue();
         System.out.println(pseudoQueue.stackTwo.toString());
 
+        AnimalShelter animalShelter = new AnimalShelter();
+        Animal cat1 = new Cat("Ketty");
+        Animal cat2 = new Cat("Bella");
+        Animal cat3 = new Cat("Luna");
+        Animal dog1 = new Dog("Milo");
+        Animal dog2 = new Dog("Oscar");
+        Animal dog3 = new Dog("Toby");
+
+        animalShelter.enqueue(cat1);
+        animalShelter.enqueue(dog2);
+        animalShelter.enqueue(dog3);
+        animalShelter.enqueue(dog1);
+        animalShelter.enqueue(cat3);
+        animalShelter.enqueue(cat2);
+
+        System.out.println(animalShelter);
+
+        animalShelter.dequeue("cat");
+        System.out.println(animalShelter);
+
+
+        animalShelter.dequeue("dog");
+        System.out.println(animalShelter);
+
+
+
+
 
 
     }

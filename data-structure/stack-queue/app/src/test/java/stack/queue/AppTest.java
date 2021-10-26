@@ -161,5 +161,29 @@ class AppTest {
         assertEquals("L",pseudoQueue.dequeue());
     }
 
+    @Test void AnimalShelter(){
+        AnimalShelter animalShelter = new AnimalShelter();
+        Animal cat1 = new Cat("Ketty");
+        Animal cat2 = new Cat("Bella");
+        Animal cat3 = new Cat("Luna");
+        Animal dog1 = new Dog("Milo");
+        Animal dog2 = new Dog("Oscar");
+        Animal dog3 = new Dog("Toby");
+
+        animalShelter.enqueue(cat1);
+        animalShelter.enqueue(dog2);
+        animalShelter.enqueue(dog3);
+        animalShelter.enqueue(dog1);
+        animalShelter.enqueue(cat3);
+        animalShelter.enqueue(cat2);
+
+        assertEquals("AnimalShelter{cat=Queue :  Node{value : 'Ketty'} Node{value : 'Luna'} Node{value : 'Bella'}, dog=Queue :  Node{value : 'Oscar'} Node{value : 'Toby'} Node{value : 'Milo'}}",animalShelter.toString());
+
+        animalShelter.dequeue("cat");
+        assertEquals("AnimalShelter{cat=Queue :  Node{value : 'Luna'} Node{value : 'Bella'}, dog=Queue :  Node{value : 'Oscar'} Node{value : 'Toby'} Node{value : 'Milo'}}",animalShelter.toString());
+        animalShelter.dequeue("dog");
+        assertEquals("AnimalShelter{cat=Queue :  Node{value : 'Luna'} Node{value : 'Bella'}, dog=Queue :  Node{value : 'Toby'} Node{value : 'Milo'}}",animalShelter.toString());
+    }
+
 
 }

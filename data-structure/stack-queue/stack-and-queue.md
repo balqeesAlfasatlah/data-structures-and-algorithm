@@ -95,3 +95,35 @@ Create a new class called pseudo queue has two stacks and enqueue , dequeue meth
 
 - [x] If its empty
 - [x] enqueue and dequeue methods
+
+
+# Challenge stack-queue-animal-shelter
+
+Create a class called AnimalShelter which holds only dogs and cats.
+The shelter operates using a first-in, first-out approach.
+
+## Whiteboard Process
+
+
+[![chal12.png](https://i.postimg.cc/vDF90VVF/chal12.png)](https://postimg.cc/64cy3TcY)
+
+
+## Approach & Efficiency
+
++ enqueue :
+Arguments: animal
+animal can be either a dog or a cat object.
+
++ dequeue
+Arguments: pref
+pref can be either "dog" or "cat"
+
++ Return: either a dog or a cat, based on preference.
+If pref is not "dog" or "cat" then return null.
+
+
+## Testing :
+
+- [x] enqueue and dequeue methods for animals 
+
+

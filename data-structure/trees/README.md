@@ -1,7 +1,7 @@
 # Trees
 <!-- Short summary or background information -->
 
-## Challenge Trees :
+## Challenge 15 Trees :
 
  - Create a Binary Tree class :
 Define a method for each of the depth first traversals:

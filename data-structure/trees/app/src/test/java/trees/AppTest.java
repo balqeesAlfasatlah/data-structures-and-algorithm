@@ -19,7 +19,7 @@ class AppTest {
 
 
     @Test
-    void testing() {
+    void testEmpty() {
         BinaryTree<Integer> tree = new BinaryTree<>();
         assertTrue(tree instanceof BinaryTree);
         assertEquals("the list empty", tree.toString());
@@ -27,21 +27,60 @@ class AppTest {
 
 
     @Test
+    void testSingleRoot() {
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(6);
+        assertEquals(6,tree.root);
+    }
+
+
+    @Test
     void testChild() {
-        BinaryTree<Integer> tree = new BinaryTree<>();
-        Node<Integer> node1 = new Node<>(2);
-        Node<Integer> node2 = new Node<>(5);
-        Node<Integer> root = new Node<>(3 , node1 , node2);
-        assertEquals( 3, root.value);
-        assertEquals( 2 , root.left.value);
-        assertEquals( 5 , root.right.value);
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(2);
+        tree.insert(5);
+        tree.insert(9);
+        assertEquals(2,tree.root);
+        assertEquals(5,tree.root.getLeft());
+        assertEquals(9,tree.root.getRight());
     }
 
- 
-
-
-
+    @Test
+    void testPreOrder() {
+        BinarySearchTree tree = new BinarySearchTree<>();
+        tree.insert(1);
+        tree.insert(4);
+        tree.insert(7);
+        tree.insert(9);
+        tree.insert(10);
+        List list = List.of(1,4,7,9,10);
+        assertEquals(list,tree.preOrder(tree.root));
     }
+    @Test
+    void testInOrder() {
+        BinarySearchTree tree = new BinarySearchTree<>();
+        tree.insert(8);
+        tree.insert(1);
+        tree.insert(7);
+        tree.insert(4);
+        tree.insert(3);
+        List list = List.of(1,3,4,7,8);
+        assertEquals(list,tree.inOrder(tree.root));
+    }
+
+    @Test
+    void testPostOrder() {
+        BinarySearchTree tree = new BinarySearchTree<>();
+        tree.insert(6);
+        tree.insert(2);
+        tree.insert(3);
+        tree.insert(10);
+        tree.insert(4);
+        List list = List.of(2,3,4,6,10);
+        assertEquals(list,tree.postOrder(tree.root));
+    }
+
+}
 
 
 

@@ -1,6 +1,6 @@
 package trees;
 
-public class BinarySearchTree {
+public class BinarySearchTree extends BinaryTree{
 
     public Node<Integer> root;
 
@@ -34,7 +34,7 @@ public class BinarySearchTree {
             return true;
         }
         Node<Integer> cur = root;
-        while ((cur.left != null || cur.right != null)) {
+        while (cur.left != null || cur.right != null) {
             if (value < cur.value && cur.left != null) {
                 cur = cur.left;
             } else if (value > cur.value && cur.right != null) {

@@ -10,7 +10,20 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        
+
+        BinaryTree<Integer> newTree = new BinaryTree<>();
+
+        Node<Integer> node1 = new Node<>(3);
+        Node<Integer> node2 = new Node<>(5);
+        Node<Integer> node3 = new Node<>(9, node1, node2);
+        Node<Integer> node4 = new Node<>(1);
+        Node<Integer> node5 = new Node<>(7, node4, null);
+        Node<Integer> tree = new Node<>(4, node3, node5);
+
+        System.out.println(newTree.preOrder(tree));
+        System.out.println(newTree.inOrder(tree));
+        System.out.println(newTree.postOrder(tree));
+        System.out.println(newTree.toString());
 
 
     }

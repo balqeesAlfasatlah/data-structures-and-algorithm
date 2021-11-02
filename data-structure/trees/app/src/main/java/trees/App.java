@@ -20,12 +20,20 @@ public class App {
         Node<Integer> node5 = new Node<>(7, node4, null);
         Node<Integer> tree = new Node<>(4, node3, node5);
 
-        System.out.println(newTree.preOrder(tree));
-        System.out.println(newTree.inOrder(tree));
-        System.out.println(newTree.postOrder(tree));
-        System.out.println(newTree.toString());
 
 
+
+
+//        BinarySearchTree binarySearchTree = new BinarySearchTree ();
+//        binarySearchTree.insert(5);
+//        binarySearchTree.insert(3);
+//        binarySearchTree.insert(11);
+//        binarySearchTree.insert(3);
+//        binarySearchTree.insert(10);
+//        binarySearchTree.insert(9);
+//
+//
+//        System.out.println(binarySearchTree.breadthFirst(binarySearchTree));
 
     }
 }

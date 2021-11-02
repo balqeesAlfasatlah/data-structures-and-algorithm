@@ -1,6 +1,6 @@
 package trees;
 
-public class BinarySearchTree extends BinaryTree{
+public class BinarySearchTree<T> extends BinaryTree{
 
     public Node<Integer> root;
 

@@ -59,6 +59,26 @@ public class BinaryTree <T>{
         return max;
     }
 
+
+    public List<Integer> breadthFirst(BinaryTree binaryTree) {
+        List<Integer> list = new ArrayList<>();
+        List<Node> tempList = new ArrayList<>();
+
+        tempList.add(binaryTree.root);
+
+        while (!tempList.isEmpty()){
+            list.add((Integer) tempList.get(0).value);
+            if(tempList.get(0).left != null){
+                tempList.add(tempList.get(0).left);
+            }
+            if(tempList.get(0).right != null){
+                tempList.add(tempList.get(0).right);
+            }
+            tempList.remove(0);
+        }
+        return list;
+    }
+
     @Override
     public String toString() {
         if(preOrderList.isEmpty() && inOrderList.isEmpty() && postOrderList.isEmpty()){

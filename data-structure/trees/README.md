@@ -49,3 +49,16 @@ find maximum value in the tree
 Time: O(n) , Space : O(n)
 
 
+# Challenge 17 : tree-breadth-first
+
+Return list of all values in the tree, in the order they were encountered
+
+## Whiteboard Process
+
+[![chal17.png](https://i.postimg.cc/Jhd9r7T4/chal17.png)](https://postimg.cc/1gwWMShL)
+
+## Approach & Efficiency
+
+Time: O(n) , Space : O(n)
+
+

@@ -4,11 +4,46 @@
 package trees;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+    @Test
+    void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
-}
+
+
+    @Test
+    void testing() {
+        BinaryTree<Integer> tree = new BinaryTree<>();
+        assertTrue(tree instanceof BinaryTree);
+        assertEquals("the list empty", tree.toString());
+    }
+
+
+    @Test
+    void testChild() {
+        BinaryTree<Integer> tree = new BinaryTree<>();
+        Node<Integer> node1 = new Node<>(2);
+        Node<Integer> node2 = new Node<>(5);
+        Node<Integer> root = new Node<>(3 , node1 , node2);
+        assertEquals( 3, root.value);
+        assertEquals( 2 , root.left.value);
+        assertEquals( 5 , root.right.value);
+    }
+
+ 
+
+
+
+    }
+
+
+
+
+

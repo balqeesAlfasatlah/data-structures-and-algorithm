@@ -1,7 +1,7 @@
 # Trees
 <!-- Short summary or background information -->
 
-## Challenge Trees :
+## Challenge 15 Trees :
 
  - Create a Binary Tree class :
 Define a method for each of the depth first traversals:
@@ -36,3 +36,16 @@ Define a method for each of the depth first traversals:
   1- insert : take a value and add a new node with this value  to the right location in the binary search tree
 
   2- Contains : take a value and return a boolean indicating if this value in the tree at least once
+
+# Challenge 16 : max
+
+find maximum value in the tree
+
+## Whiteboard Process
+[![chal16.png](https://i.postimg.cc/fW3vpkzH/chal16.png)](https://postimg.cc/t7jPVqVP)
+
+## Approach & Efficiency
+
+Time: O(n) , Space : O(n)
+
+

@@ -20,7 +20,26 @@ public class App {
         Node<Integer> node5 = new Node<>(7, node4, null);
         Node<Integer> tree = new Node<>(4, node3, node5);
 
-
+//         BinaryTree binaryTree1 = new BinaryTree();
+//         BinaryTree binaryTree2 = new BinaryTree();
+//         binaryTree1.setRoot(new Node(10));
+//         binaryTree1.root.setLeft(new Node(7));
+//         binaryTree1.root.setRight(new Node(15));
+//         binaryTree1.root.getLeft().setLeft(new Node(4));
+//         binaryTree1.root.getLeft().setRight(new Node(9));
+//         binaryTree1.root.getRight().setRight(new Node(20));
+//         binaryTree1.root.getRight().setLeft(new Node(50));
+//         binaryTree2.setRoot(new Node(100));
+//         binaryTree2.root.setLeft(new Node(70));
+//         binaryTree2.root.setRight(new Node(150));
+//         binaryTree2.root.getLeft().setLeft(new Node(40));
+//         binaryTree2.root.getLeft().setRight(new Node(90));
+//         binaryTree2.root.getRight().setRight(new Node(200));
+//         binaryTree2.root.getRight().setLeft(new Node(200));
+//         binaryTree2.root.getRight().getRight().setRight(new Node(200));
+//         System.out.println("leaves number 1 " + binaryTree1.getLeafCount(binaryTree1.root));
+//         System.out.println("leaves number 2 " + binaryTree1.getLeafCount(binaryTree2.root));
+//         System.out.println("compare " + binaryTree1.compareTwoTreesLeaves(binaryTree1, binaryTree2));
 
 
 
@@ -34,6 +53,25 @@ public class App {
 //
 //
 //        System.out.println(binarySearchTree.breadthFirst(binarySearchTree));
+
+
+
+        KaryTree<Integer> KaryTree = new KaryTree<>(3);
+        KaryTree.insert(1);
+        KaryTree.insert(15);
+        KaryTree.insert(3);
+        KaryTree.insert(15);
+        KaryTree.insert(12);
+        KaryTree.insert(20);
+        KaryTree.insert(2);
+        KaryTree.insert(60);
+        System.out.print("Tree before : ");
+        System.out.println(KaryTree);
+        System.out.print("Tree after : ");
+        System.out.println(KaryTree.fizzBuzzTree(KaryTree));
+
+
+
 
     }
 }

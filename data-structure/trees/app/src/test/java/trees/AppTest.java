@@ -17,7 +17,22 @@ class AppTest {
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
 
+    @Test
+    void fizzBuzz(){
+        KaryTree tree = new KaryTree(2);
+        tree.insert(3);
+        tree.insert(1);
+        tree.insert(15);
+        tree.insert(10);
+        tree.insert(4);
+        assertEquals("[KNode{value=Fizz, child=[KNode{value=1, child=[KNode{value=Buzz, child=[]}, KNode{value=4, child=[]}]}, KNode{value=FizzBuzz, child=[]}]}]",tree.fizzBuzzTree(tree).toString());
 
+
+
+
+
+
+    }
 
 }
 

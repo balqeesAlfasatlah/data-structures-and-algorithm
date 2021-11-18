@@ -8,9 +8,13 @@ public class BinaryTree <T>{
     public List<T> preOrderList = new ArrayList<>();
     public List<T> inOrderList = new ArrayList<>();
     public List<T> postOrderList = new ArrayList<>();
+
+    public void setRoot(Node<Integer> root) {
+        this.root = root;
+    }
+
     public Node<Integer> root;
-
-
+   
 
 
     public List<T> preOrder(Node<T> root) {
@@ -79,6 +83,19 @@ public class BinaryTree <T>{
         return list;
     }
 
+
+//    public int getLeafCount(Node node) {
+//        if (node == null) {
+//            return 0;
+//        }if (node.getLeft() == null && node.getRight() == null)
+//        { return 1;
+//        }else {
+//            return getLeafCount(node.getLeft()) + getLeafCount(node.getRight());    }
+//    }  public boolean compareTwoTreesLeaves(BinaryTree binaryTree1, BinaryTree binaryTree2){
+//        int leavesNumTree1 = binaryTree1.getLeafCount(binaryTree1.root);
+//        int leavesNumTree2 = binaryTree1.getLeafCount(binaryTree2.root);
+//        return leavesNumTree1 == leavesNumTree2;  }
+
     @Override
     public String toString() {
         if(preOrderList.isEmpty() && inOrderList.isEmpty() && postOrderList.isEmpty()){
@@ -91,6 +108,8 @@ public class BinaryTree <T>{
                 ", postOrderList=" + postOrderList +
                 '}';
     }
+
+
 }
 
 

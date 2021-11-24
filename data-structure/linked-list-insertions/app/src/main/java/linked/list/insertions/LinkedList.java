@@ -111,15 +111,17 @@ public class LinkedList<T> {
         } else {
             cur = head;
             for (int i = 0; i <= counter - k; i++) {
-                if (i == counter - k) {
-                    return "tha index from the end is : " + cur.val;
-                }
+
                 cur = cur.next;
             }
 
         }
-        return "error";
+        return "tha index from the end is : " + cur.val;
     }
+
+
+
+
 
 
     public LinkedList zip(LinkedList list1, LinkedList list2) {

@@ -3,6 +3,8 @@
  */
 package hashtable;
 
+import java.util.HashMap;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -11,18 +13,35 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
 
-        HashTable<String,Integer> table = new HashTable<>();
-        table.add("khaled",1);
-        table.add("Aseel",2);
-        table.add("Ali",3);
-        table.add("Mariam",4);
-        table.add("Mohammad",5);
+//        HashTable<String,Integer> table = new HashTable<>();
+//        table.add("khaled",1);
+//        table.add("Aseel",2);
+//        table.add("Ali",3);
+//        table.add("Mariam",4);
+//        table.add("Mohammad",5);
+//
+//        System.out.println("size : " + table.getSize());
+//        System.out.println(table.get("Aseel"));
+//        System.out.println(table.contains("Ali"));
+//        System.out.println(table.remove("Mohammad"));
 
-        System.out.println("size : " + table.getSize());
-        System.out.println(table.get("Aseel"));
-        System.out.println(table.contains("Ali"));
-        System.out.println(table.remove("Mohammad"));
 
+        HashMap<String, String> l = new HashMap<>();
+        HashMap<String, String> r = new HashMap<>();
+
+        l.put("fond", "enamored");
+        l.put("wrath", "anger");
+        l.put("diligent", "employed");
+        l.put("outfit", "garb");
+        l.put("guide", "usher");
+
+        r.put("fond", "averse");
+        r.put("wrath", "delight");
+        r.put("diligent", "idle");
+        r.put("guide", "follow");
+        r.put("flow", "jam");
+
+        System.out.println(HashTable.leftJoin(l,r));
 
 
 

@@ -1,6 +1,8 @@
 package hashtable;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Objects;
 
 public class HashTable<K,V> {
@@ -125,5 +127,21 @@ public class HashTable<K,V> {
         return false;
 
 
+    }
+
+
+    public static List<String> leftJoin(HashMap<String, String> hOne, HashMap<String, String> hTwo) {
+
+        if (hOne.keySet().isEmpty()) {
+            return null;
+        }
+
+        List<String> myList = new ArrayList<>();
+        for (String key : hOne.keySet()) {
+
+            myList.add("[ " + key + ", " + hOne.get(key) + ", " + hTwo.get(key) + " ]");
+        }
+
+        return myList;
     }
 }

@@ -24,6 +24,20 @@ public class App {
         System.out.println( linkedList.includes(10));
         System.out.println( linkedList.includes(6));
 
+        System.out.println(linkedList.addFirst(77));
+        System.out.println(linkedList.toString());
+
+        System.out.println(linkedList.addLast(100));
+        System.out.println(linkedList.toString());
+
+        System.out.println(linkedList.addBefore(11,5));
+        System.out.println(linkedList.toString());
+
+//        System.out.println(linkedList.addAfter(3,9));
+//        System.out.println(linkedList.toString());
+
+        System.out.println(linkedList.khFunctoon(2));
+
 
     }
 }

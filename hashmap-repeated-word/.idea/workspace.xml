@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fce822b8-8366-4fc7-85d5-5faddacd693c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../challenge-5/app/src/main/java/challenge/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge-5/app/src/main/java/challenge/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenge-5/app/src/main/java/challenge/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge-5/app/src/main/java/challenge/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data-structure/linked-list-insertions/app/src/main/java/linked/list/insertions/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../data-structure/linked-list-insertions/app/src/main/java/linked/list/insertions/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data-structure/linked-list-insertions/app/src/main/java/linked/list/insertions/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../data-structure/linked-list-insertions/app/src/main/java/linked/list/insertions/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fce822b8-8366-4fc7-85d5-5faddacd693c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hashtable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../graph" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">

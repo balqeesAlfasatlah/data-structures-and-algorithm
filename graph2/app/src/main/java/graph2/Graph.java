@@ -5,6 +5,8 @@ import java.util.*;
 public class Graph <T>{
 
     public Map<Node<T> , List<Node<T>>> list= new HashMap<>();
+    public Map<String , Integer> list2 = new HashMap<>();
+
 
     public Graph() {}
 
@@ -62,6 +64,18 @@ public class Graph <T>{
             }
         }
         return allNodes;
+    }
+
+    public String businessTrip(T value, T [] arr) {
+        int cost = 0;
+        for (int k = 0; k < arr.length -1; k++) {
+            if (getNeighbors(arr[k]).contains(new Node<>(arr[k+1]))) {
+                cost += list2.get(arr[k] + "-->" + arr[k+1]);
+            } else {
+                return "false, $0";
+            }
+        }
+        return true + "true, $" + cost ;
     }
 
     @Override

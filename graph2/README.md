@@ -11,9 +11,29 @@ Implement Graph. The graph should be represented as an adjacency list, and shoul
 + size
 
 ## Approach & Efficiency
-Time : O(1)
+ + add node : 
+ 
+   + time : O(1) , because there no loop
+   + space : O(n), because we create node with children list
 
-Space : O(n)
++ add edge
+
+    + time : O(1), because there no loop
+    + space :O(1), because no extra space
+
++ get nodes
+
+   + time : O(1), because there no loop
+   + space :O(1), because no extra space
+
++ get neighbors
+
+  + time : O(1), because there no loop
+  + space :O(1), because no extra space
+
++ size
+   + time : O(1), because there no loop
+   + space :O(1), because no extra space
 
 
 ## API
@@ -58,6 +78,9 @@ Space : O(n)
 
 Implement a breadth-first traversal on a graph. And return a collection of nodes in the order they were visited.
 
+## Whiteboard Process
+
+[![bredth-First.png](https://i.postimg.cc/vH9P1Jv7/bredth-First.png)](https://postimg.cc/WhNmCfCt)
 
 ## API
 
@@ -67,3 +90,19 @@ Implement a breadth-first traversal on a graph. And return a collection of nodes
     + Arguments: Node
     + Return: A collection of nodes in the order they were visited.
     + Display the collection
+
+
+##  Challenge 37 - graph-business-trip
+
+Write a function called business trip and determine whether the trip is possible with direct flights, and how much it would cost.
+
+
+## Whiteboard Process
+
+[![trip2.png](https://i.postimg.cc/RFsYbbhS/trip2.png)](https://postimg.cc/Q97SFmcw)
+
+## Approach & Efficiency
+
+Time :  O(n)
+Space : O(1)
+

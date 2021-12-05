@@ -11,26 +11,20 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
 
-//        Graph graph = new Graph();
-//        graph.addNode("1");
-//        graph.addNode("2");
-//        graph.addNode("3");
-//        graph.addNode("4");
-//        graph.addNode("9");
-//        graph.addNode("5");
-//
-//        graph.addEdge("1", "2");
-//        graph.addEdge("2", "1");
-//        graph.addEdge("2", "3");
-//        graph.addEdge("4", "2");
-//        graph.addEdge("4", "3");
-//        graph.addEdge("4", "9");
-//        graph.addEdge("4", "5");
-//
-//        String[] trip1 = {"4" , "1" , "3"};
-//        String[] trip2 = {"4" , "1"};
-////        String[] trip3 = {"4" , "1" , "3" , "7" , "5" , "9" , "2" };
-//        String[] trip4 = {"4" , "9" , "5" };
+      Graph graph = new Graph();
+
+        graph.addNode("1");
+        graph.addNode("2");
+        graph.addNode("7");
+        graph.addNode("5");
+        graph.addEdge("1", "2", 30);
+        graph.addEdge("5", "1", 50);
+        graph.addEdge("7", "5", 100);
+
+
+        String[] trip1 = {"1", "2"};
+        String[] trip2 = {"1", "5", "7"};
+        String[] trip3 = {"1", "2", "5"};
 
 
 //        System.out.println(graph);
@@ -38,10 +32,10 @@ public class App {
 //        System.out.println(graph.getNeighbors("1"));
 //        System.out.println(graph.size());
 
-//
+        System.out.println(graph.businessTrip("1",trip1));
+        System.out.println(graph.businessTrip("1",trip2));
+        System.out.println(graph.businessTrip("1",trip3));
 
-
-      
 
     }
 }

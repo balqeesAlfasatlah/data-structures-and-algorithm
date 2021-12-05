@@ -104,5 +104,5 @@ Write a function called business trip and determine whether the trip is possible
 ## Approach & Efficiency
 
 Time :  O(n)
-Space : O(1)
+Space : O(n)
 

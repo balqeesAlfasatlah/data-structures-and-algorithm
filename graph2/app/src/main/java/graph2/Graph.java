@@ -16,14 +16,19 @@ public class Graph <T>{
         return node;
     }
 
-    public void addEdge(T val1, T val2) {
+    public void addEdge(T val1, T val2 , int weight) {
         Node<T> n1 = new Node<T>(val1);
         if (val1.equals(val2)){
             list.get(n1).add(n1);
+            list2.put(val1 + "->" + val1 ,0);
+
         } else {
             Node<T> n2 = new Node<T>(val2);
             list.get(n1).add(n2);
             list.get(n2).add(n1);
+            list2.put(val1 + "->" + val2 ,weight);
+            list2.put(val2 + "->" + val1 ,weight);
+
         }
     }
 
@@ -70,12 +75,12 @@ public class Graph <T>{
         int cost = 0;
         for (int k = 0; k < arr.length -1; k++) {
             if (getNeighbors(arr[k]).contains(new Node<>(arr[k+1]))) {
-                cost += list2.get(arr[k] + "-->" + arr[k+1]);
+                cost += list2.get(arr[k] + "->" + arr[k+1]);
             } else {
                 return "false, $0";
             }
         }
-        return true + "true, $" + cost ;
+        return true + " , $" + cost ;
     }
 
     @Override
